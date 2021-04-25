@@ -11,6 +11,13 @@ Get SSH key: cat ~/.ssh/id_rsa.pub
 Copy/paste this key to GitHub => account => settings => SSH Keys
 
 
+diff -u file_broken file_fixed => puts on screen
+diff -u file_broken file_fixed > file.diff => create a file with differences
+cat file.diff
+patch file_broken < file.diff => patches a broken file with a diff file
+
+
+
 Initialize a new repository / add file / commit file / log of changes
 git init
 git status
@@ -28,17 +35,19 @@ git log => to see all upates/changes
 
 Push existing repository to remote location
 git remote add origin -u <address>
-git push -u master
+git push -u origin master
 
 Info of the remote repository fetch/push
 git remote -v
+
+
 
 
 Git flow:
 - we have unstaged work (new or updated files)
 - we stage our work (adding all changes to be committed)
 - we commit our work (adding changes to git repo)
-- finally we push our work
+- finally we push our work (git push -u origin master)
 
 
 
