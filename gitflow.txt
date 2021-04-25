@@ -36,9 +36,11 @@ git remote -v
 
 Git flow:
 - we have unstaged work (new or updated files)
-- we stage our work
-- we commit our work
+- we stage our work (adding all changes to be committed)
+- we commit our work (adding changes to git repo)
 - finally we push our work
+
+
 
 
 
