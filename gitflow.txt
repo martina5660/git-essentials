@@ -1,0 +1,49 @@
+Essentials:
+
+git --version
+git config --global user.name
+git config --global user.email
+cat ~/.gitconfig
+
+Create SSH key: ssh-keygen -o
+The key is put here: c/User/marti/.ssh/id_rsa
+Get SSH key: cat ~/.ssh/id_rsa.pub
+Copy/paste this key to GitHub => account => settings => SSH Keys
+
+
+Initialize a new repository / add file / commit file / log of changes
+git init
+git status
+git add .
+git add <filename>
+git commit -m "Message about the commit"
+
+git log --graph
+git log --oneline
+
+
+Clone existing repo from GitHub:
+git clone <repo-url>
+git log => to see all upates/changes
+
+Push existing repository to remote location
+git remote add origin -u <address>
+git push -u master
+
+Info of the remote repository fetch/push
+git remote -v
+
+
+Git flow:
+- we have unstaged work (new or updated files)
+- we stage our work
+- we commit our work
+- finally we push our work
+
+
+
+
+
+
+
+
