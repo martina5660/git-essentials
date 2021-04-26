@@ -32,39 +32,56 @@ git log --graph
 git log --oneline
 
 
-Clone existing repo from GitHub:
+**Clone existing repo from GitHub**
 git clone <repo-url>
 git log => to see all upates/changes
 
-Push existing repository to remote location
+
+**Push existing repository to remote location**
 git remote add origin -u <address>
-git push -u origin master [git push(command) origin(the name of a remote repo) master(the name of a remote repo's branch)
+git push -u origin master [git push(command) origin(the name of a remote repo) master(the name of a remote reo
 
 Info of the remote repository fetch/push
 git remote -v
 
 
+**Git pull**
+git pull -> git fetch + git merge
+git fetch -> downloads history of changes
+git merge -> merges branches
 
-Git flow:
+
+
+**Git flow**
 - we have unstaged work (new or updated files)
 - we stage our work (adding all changes to be committed)
 - we commit our work (adding changes to git repo)
 - finally we push our work (git push -u origin master)
 
 
-Git reset / restore:
-
-git reset HEAD <filename> => unstage an accidentally deleted file
+**Git reset / restore**
+git reset HEAD [file or folder] => unstage an accidentally deleted file
 git restore <filename> => restore an accidentally deleted file
 git checkout -- <filename> => restores the deleted file as well
 
-Useful Commands:
+
+**Useful Commands**
+git log --oneline --graph --decorate --all
+
 git reset HEAD [file or folder]
 git reset --hard [tag/branch/id] -> forcibly reset all to last commit
 git commit -S 	-> commit & signed with GPG (gnupg)
 git stash save	-> save all changes in working + index
 git stash pop	-> restore changes
 git stash list	-> git statuslist all stashes you've saved
+
+
+**Branching**|
+`git branch` | list branches, * -> current branch
+`git branch bugfix49` | create branch named **bugfix49** at current commit
+`git branch bugfix49 893cbb8` | create branch named **bugfix49** at commit **893cbb8**
+`git branch bugfix49 master` | create branch named **bugfix49** at commit **master**
+`git branch -d bugfix49` | delete branch **bugfix49**
 
 
 
