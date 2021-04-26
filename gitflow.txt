@@ -82,6 +82,7 @@ git stash list	-> git statuslist all stashes you've saved
 `git branch bugfix49 893cbb8` | create branch named **bugfix49** at commit **893cbb8**
 `git branch bugfix49 master` | create branch named **bugfix49** at commit **master**
 `git branch -d bugfix49` | delete branch **bugfix49**
+`git push origin --delete bugfix49` | delete remote branch **bugfix49**
 
 
 
